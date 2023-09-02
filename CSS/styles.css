@@ -1,0 +1,109 @@
+/* Group-2
+Aarsh Parimal Patel - 200520260
+Daxil Ashishkumar Patel - 200520270
+Kunjesh Kantilal Ramani - 200515106
+Assignment - 4 */
+
+/* Styles for fading elements */
+.fade {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Styles for hiding elements */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* Prevents interaction with hidden elements */
+}
+
+/* Styles for menu padding */
+.paddingForMenu {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* Styles for submit button on hover */
+button[type="submit"]:hover {
+    background-color: #ce85ff;
+}
+
+/* Styles for text input */
+input[type="text"] {
+    width: 5000px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #efcfff;
+    border-radius: 20px;
+    transition: width 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Styles for focused text input */
+input[type="text"]:focus {
+    border-radius: 30px;
+    transform: scale(1.05);
+}
+
+/* Styles for submit button */
+button[type="submit"] {
+    margin-left: 10px;
+    padding: 12px 20px;
+    background-color: #6e42ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styles for button padding alignment */
+.buttonPadding {
+    text-align: center;
+}
+
+/* Styles for the body */
+body {
+    background-color: #13001c;
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for images */
+img {
+    max-width: 100%;
+    border: 2px solid white;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Styles for the navbar brand */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styles for modal button */
+.btnModal {
+    background-color: #b625ff57;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    color: rgb(162, 41, 255);
+    padding: 10px 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Styles for level 1 headings */
+h1 {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #9777ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

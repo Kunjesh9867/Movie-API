@@ -1,0 +1,68 @@
+<!-- 
+    Group-2
+    Aarsh Parimal Patel - 200520260
+    Daxil Ashishkumar Patel - 200520270
+    Kunjesh Kantilal Ramani - 200515106
+    Assignment - 4
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Movie App</title>
+  <!-- Link to the Bootstrap CSS framework -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  <!-- Link to your custom CSS file -->
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Link to Google Fonts for custom typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet" />
+
+  <!-- Include jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Include your custom JavaScript file -->
+  <script type="text/javascript" src="JS/scripts.js"></script>
+</head>
+
+<body>
+  <!-- Main heading -->
+  <h1>Search your favourite movie!</h1>
+  <br />
+
+  <!-- Search form and navigation menu -->
+  <div class="paddingForMenu">
+    <ul class="nav navbar-nav">
+      <!-- Search form with input and submit button -->
+      <form class="navbar-form searchForm">
+        <div class="form-group" class="searchMovie">
+          <input type="text" class="form-control" placeholder="Search movies" />
+        </div>
+        <button type="submit" class="btn btn-default" class="buttonPadding">
+          GO!
+        </button>
+      </form>
+    </ul>
+  </div>
+  <br /><br /><br />
+
+  <!-- Container for movie content -->
+  <div class="container">
+    <div class="row">
+      <!-- Element to display the movie genre label -->
+      <div class="genreLabel">
+        <h1 id="movieGenreLabel"></h1>
+      </div>
+
+      <!-- Element to display the movie grid -->
+      <div id="movie-grid"></div>
+    </div>
+  </div>
+</body>
+
+</html>
