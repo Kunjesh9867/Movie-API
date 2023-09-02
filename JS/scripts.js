@@ -18,14 +18,17 @@ $(document).ready(function () {
 
         // Loop through each movie in the data and create HTML for it
         data.results.forEach(function (movie, i) {
-            const poster = imageBaseUrl + "w300" + movie.poster_path;
-            const html = `
-                <div class="col-sm-3 eachMovie">
-                    <button type="button" class="btnModal" data-toggle="modal" data-target="#exampleModal${i}" data-whatever="@${i}">
-                        <img src="${poster}">
-                    </button>
-                </div>`;
-            movieGrid.append(html); // Add the HTML to the movie grid
+            // Check if the poster path is available
+            if (movie.poster_path) {
+                const poster = imageBaseUrl + "w300" + movie.poster_path;
+                const html = `
+                    <div class="col-sm-3 eachMovie">
+                        <button type="button" class="btnModal" data-toggle="modal" data-target="#exampleModal${i}" data-whatever="@${i}">
+                            <img src="${poster}">
+                        </button>
+                    </div>`;
+                movieGrid.append(html); // Add the HTML to the movie grid
+            }
         });
     }
 
