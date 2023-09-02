@@ -6,7 +6,7 @@
 
 // API key and base URLs
 const apiKey = "af10ea7acbced6427e3ce5df54186ef8";
-const apiBaseURL = "http://api.themoviedb.org/3/";
+const apiBaseURL = "https://api.themoviedb.org/3/";
 const imageBaseUrl = "https://image.tmdb.org/t/p/";
 const nowPlayingURL = apiBaseURL + "movie/now_playing?api_key=" + apiKey;
 
